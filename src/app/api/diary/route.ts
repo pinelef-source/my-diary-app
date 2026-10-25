@@ -5,7 +5,7 @@ export async function POST(request: Request) {
     const { title, content } = await request.json();
 
     // n8n Webhook URL 입력 (추후 n8n 웹훅 주소로 변경하거나 환경변수 사용)
-    const n8nWebhookUrl = 'https://tall-books-refuse.loca.lt/webhook/my-webhook';
+    const n8nWebhookUrl = 'https://pinelef.app.n8n.cloud/webhook/9d7935a6-d6ff-46fe-911d-7c31c8457a69';
 
     const response = await fetch(n8nWebhookUrl, {
       method: 'POST',
